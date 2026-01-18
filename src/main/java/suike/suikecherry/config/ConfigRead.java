@@ -1,14 +1,12 @@
 package suike.suikecherry.config;
 
-import java.util.*;
-import java.io.File;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.config.Config;
-import suike.suikecherry.config.ConfigValue;
-
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.common.Loader;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class ConfigRead {
     public static void config() {

@@ -1,18 +1,14 @@
 package suike.suikecherry.config.gui;
 
-import java.util.List;
-import java.util.ArrayList;
-
-import suike.suikecherry.SuiKe;
-
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.resources.I18n;
-
-import net.minecraftforge.fml.client.config.GuiConfig;
-import net.minecraftforge.fml.client.config.GuiConfigEntries;
-import net.minecraftforge.fml.client.config.ConfigGuiType;
-import net.minecraftforge.fml.client.config.IConfigElement;
 import net.minecraftforge.fml.client.config.DummyConfigElement;
+import net.minecraftforge.fml.client.config.GuiConfig;
+import net.minecraftforge.fml.client.config.IConfigElement;
+import suike.suikecherry.SuiKe;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ConfigGui extends GuiConfig {
     public ConfigGui(GuiScreen parent) {

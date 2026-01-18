@@ -1,32 +1,18 @@
 package suike.suikecherry.client.render.tileentity;
 
-import java.util.Map;
-import java.util.HashMap;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.proxy.ClientProxy;
-import suike.suikecherry.block.ModBlockDecoratedPot;
-import suike.suikecherry.tileentity.DecoratedPotTileEntity;
-import suike.suikecherry.tileentity.DecoratedPotTileEntity.PotTileClient;
-import suike.suikecherry.client.render.TexModelRenderer;
-
-import net.minecraft.world.World;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.client.renderer.OpenGlHelper;
-import net.minecraft.client.renderer.BufferBuilder;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.texture.TextureMap;
-import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
-import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
-import net.minecraft.client.renderer.texture.TextureAtlasSprite;
+import com.google.common.collect.ImmutableMap;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.MathHelper;
+import suike.suikecherry.client.render.TexModelRenderer;
+import suike.suikecherry.tileentity.DecoratedPotTileEntity;
+import suike.suikecherry.tileentity.DecoratedPotTileEntity.PotTileClient;
 
-import com.google.common.collect.ImmutableMap;
+import java.util.HashMap;
+import java.util.Map;
 
 public class DecoratedPotTileEntityRender extends TileEntityRender<DecoratedPotTileEntity> {
 

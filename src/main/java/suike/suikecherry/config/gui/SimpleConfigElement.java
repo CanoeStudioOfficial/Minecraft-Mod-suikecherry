@@ -1,21 +1,17 @@
 package suike.suikecherry.config.gui;
 
-import java.util.List;
-import java.util.Collections;
-import java.util.regex.Pattern;
-import java.lang.reflect.Field;
-import java.util.function.Consumer;
-
+import net.minecraft.client.resources.I18n;
+import net.minecraftforge.fml.client.config.ConfigGuiType;
+import net.minecraftforge.fml.client.config.GuiConfigEntries;
+import net.minecraftforge.fml.client.config.GuiEditArrayEntries;
+import net.minecraftforge.fml.client.config.IConfigElement;
 import suike.suikecherry.config.ConfigValue;
 import suike.suikecherry.config.CreateConfigFile;
 
-import net.minecraft.client.resources.I18n;
-
-import net.minecraftforge.fml.client.config.GuiConfig;
-import net.minecraftforge.fml.client.config.GuiConfigEntries;
-import net.minecraftforge.fml.client.config.GuiEditArrayEntries;
-import net.minecraftforge.fml.client.config.ConfigGuiType;
-import net.minecraftforge.fml.client.config.IConfigElement;
+import java.lang.reflect.Field;
+import java.util.Collections;
+import java.util.List;
+import java.util.regex.Pattern;
 
 public class SimpleConfigElement implements IConfigElement {
     private final String name;

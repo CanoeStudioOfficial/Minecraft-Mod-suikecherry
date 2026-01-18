@@ -1,24 +1,18 @@
 package suike.suikecherry.client.render.item;
 
-import java.util.List;
-import java.util.Random;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.item.ModItemPotterySherd;
-import suike.suikecherry.tileentity.DecoratedPotTileEntity;
-import suike.suikecherry.client.render.tileentity.TileEntityRender;
-import suike.suikecherry.client.render.tileentity.DecoratedPotTileEntityRender;
-import suike.suikecherry.client.render.tileentity.DecoratedPotTileEntityRender.ModelDecoratedPot;
-
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.nbt.NBTTagList;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
-
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraft.util.EnumFacing;
 import net.minecraftforge.common.util.Constants;
+import suike.suikecherry.client.render.tileentity.DecoratedPotTileEntityRender;
+import suike.suikecherry.client.render.tileentity.DecoratedPotTileEntityRender.ModelDecoratedPot;
+import suike.suikecherry.item.ModItemPotterySherd;
+import suike.suikecherry.tileentity.DecoratedPotTileEntity;
+
+import java.util.Random;
 
 public class DecoratedPotItemRender {
     // /give @s suikecherry:decorated_pot 1 0 {RandomSherdDisplay:1b}

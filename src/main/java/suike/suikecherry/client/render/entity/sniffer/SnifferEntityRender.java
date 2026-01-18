@@ -1,18 +1,16 @@
 package suike.suikecherry.client.render.entity.sniffer;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.entity.sniffer.SnifferEntity;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.EnumParticleTypes;
-import net.minecraft.util.EnumBlockRenderType;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraft.util.EnumBlockRenderType;
+import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.BlockPos;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.entity.sniffer.SnifferEntity;
 
 public class SnifferEntityRender extends RenderLiving<SnifferEntity> {
     private static final ResourceLocation TEXTURE = new ResourceLocation(SuiKe.MODID, "textures/entity/sniffer.png");

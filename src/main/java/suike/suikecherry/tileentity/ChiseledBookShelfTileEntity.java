@@ -1,30 +1,25 @@
 package suike.suikecherry.tileentity;
 
-import java.util.List;
-import java.util.ArrayList;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.sound.Sound;
-import suike.suikecherry.item.ItemBase;
-import suike.suikecherry.block.ModBlockChiseledBookShelf;
-
+import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
+import it.unimi.dsi.fastutil.ints.IntSet;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.util.EnumFacing;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.inventory.IInventory;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SPacketUpdateTileEntity;
-
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.EnumFacing;
 import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.fml.common.network.NetworkRegistry;
+import suike.suikecherry.block.ModBlockChiseledBookShelf;
+import suike.suikecherry.item.ItemBase;
+import suike.suikecherry.sound.Sound;
 
-import it.unimi.dsi.fastutil.ints.IntSet;
-import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ChiseledBookShelfTileEntity extends TileEntity implements IInventory {
 // 存储物品相关

@@ -1,8 +1,8 @@
 package suike.suikecherry.particle;
 
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.client.particle.ParticleSmokeNormal;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 public class DustPlumeParticle extends ParticleSmokeNormal {
     private static final float scale = 1.0F;

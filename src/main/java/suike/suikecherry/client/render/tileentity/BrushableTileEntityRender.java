@@ -1,28 +1,17 @@
 package suike.suikecherry.client.render.tileentity;
 
-import java.util.Map;
-
-import suike.suikecherry.data.AxisPosition;
-import suike.suikecherry.tileentity.BrushableTileEntity;
-import suike.suikecherry.client.render.TexModelRenderer;
-
-import net.minecraft.world.World;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.client.renderer.OpenGlHelper;
-import net.minecraft.client.renderer.BufferBuilder;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.texture.TextureMap;
-import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
-import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
-import net.minecraft.client.renderer.texture.TextureAtlasSprite;
+import com.google.common.collect.ImmutableMap;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.ResourceLocation;
+import suike.suikecherry.data.AxisPosition;
+import suike.suikecherry.tileentity.BrushableTileEntity;
 
-import com.google.common.collect.ImmutableMap;
+import java.util.Map;
 
 public class BrushableTileEntityRender extends TileEntityRender<BrushableTileEntity> {
 

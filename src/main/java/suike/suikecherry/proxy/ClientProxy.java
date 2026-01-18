@@ -1,29 +1,26 @@
 package suike.suikecherry.proxy;
 
-import java.util.List;
-import java.util.ArrayList;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.particle.*;
-import suike.suikecherry.tileentity.*;
-import suike.suikecherry.packet.PacketHandler;
-import suike.suikecherry.client.render.tileentity.*;
-import suike.suikecherry.client.render.armor.ArmorTrimRender;
-
-import net.minecraft.item.Item;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
-
+import net.minecraftforge.client.event.TextureStitchEvent;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.client.registry.ClientRegistry;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.client.event.TextureStitchEvent;
+import suike.suikecherry.client.render.armor.ArmorTrimRender;
+import suike.suikecherry.client.render.tileentity.*;
+import suike.suikecherry.packet.PacketHandler;
+import suike.suikecherry.particle.CherryParticle;
+import suike.suikecherry.particle.ModParticle;
+import suike.suikecherry.tileentity.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Mod.EventBusSubscriber
 public class ClientProxy extends CommonProxy {

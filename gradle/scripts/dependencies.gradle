@@ -36,7 +36,7 @@ dependencies {
 
     implementation rfg.deobf("curse.maven:future-mc-310059:6162819")
     implementation rfg.deobf("curse.maven:had-enough-items-557549:7387686")
-    implementation rfg.deobf("curse.maven:realistic-terrain-generation-unofficial-648514:4696300")
+    implementation rfg.deobf("curse.maven:realistic-terrain-generation-plus-981628:5466561")
     implementation rfg.deobf("curse.maven:biomes-o-plenty-220318:3558882")
     implementation rfg.deobf("curse.maven:oceanic-expanse-840576:7009970")
     implementation rfg.deobf("curse.maven:mo-bends-231347:7046012")

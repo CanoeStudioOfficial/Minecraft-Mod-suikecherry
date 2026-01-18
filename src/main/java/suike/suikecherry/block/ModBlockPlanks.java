@@ -1,22 +1,18 @@
 package suike.suikecherry.block;
 
-import java.util.Map;
-
+import com.google.common.collect.ImmutableMap;
+import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.MapColor;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.EnumDyeColor;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.util.ResourceLocation;
 import suike.suikecherry.SuiKe;
 import suike.suikecherry.sound.ModSoundType;
 
-import net.minecraft.item.ItemBlock;
-import net.minecraft.item.EnumDyeColor;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockSlab;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.util.SoundEvent;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
-
-import com.google.common.collect.ImmutableMap;
+import java.util.Map;
 
 // 木板类
 public class ModBlockPlanks extends Block {

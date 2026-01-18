@@ -1,14 +1,12 @@
 package suike.suikecherry.config;
 
-import java.io.File;
-
+import net.minecraft.client.Minecraft;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import suike.suikecherry.SuiKe;
 import suike.suikecherry.expand.Examine;
 import suike.suikecherry.expand.exnihilocreatio.ExNihiloCreatioExpand;
 
-import net.minecraft.client.Minecraft;
-
-import net.minecraftforge.fml.common.FMLCommonHandler;
+import java.io.File;
 
 public class Config {
     public static File config;

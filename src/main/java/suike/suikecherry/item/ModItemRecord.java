@@ -1,12 +1,10 @@
 package suike.suikecherry.item;
 
-import suike.suikecherry.SuiKe;
-
 import net.minecraft.item.ItemRecord;
-import net.minecraft.util.SoundEvent;
 import net.minecraft.util.ResourceLocation;
-
+import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import suike.suikecherry.SuiKe;
 
 // 唱片
 public class ModItemRecord extends ItemRecord {

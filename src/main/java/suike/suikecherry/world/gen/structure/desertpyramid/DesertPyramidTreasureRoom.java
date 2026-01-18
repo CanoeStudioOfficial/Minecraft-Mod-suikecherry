@@ -1,30 +1,25 @@
 package suike.suikecherry.world.gen.structure.desertpyramid;
 
-import java.util.Random;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.block.BlockBase;
-import suike.suikecherry.tileentity.BrushableTileEntity;
-import suike.suikecherry.data.TreasureData.Structure;
-import suike.suikecherry.data.TreasureRoomData;
-
-import net.minecraft.init.Blocks;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockSandStone;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldServer;
+import net.minecraft.init.Blocks;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.world.gen.structure.template.Template;
-import net.minecraft.world.gen.structure.StructureBoundingBox;
-import net.minecraft.world.gen.structure.template.TemplateManager;
-import net.minecraft.world.gen.structure.template.PlacementSettings;
-import net.minecraft.world.gen.structure.template.ITemplateProcessor;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
 import net.minecraft.world.gen.structure.ComponentScatteredFeaturePieces;
-import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.world.gen.structure.StructureBoundingBox;
+import net.minecraft.world.gen.structure.template.ITemplateProcessor;
+import net.minecraft.world.gen.structure.template.PlacementSettings;
+import net.minecraft.world.gen.structure.template.Template;
+import net.minecraft.world.gen.structure.template.TemplateManager;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.data.TreasureData.Structure;
+import suike.suikecherry.data.TreasureRoomData;
+import suike.suikecherry.tileentity.BrushableTileEntity;
+
+import java.util.Random;
 
 public class DesertPyramidTreasureRoom extends ComponentScatteredFeaturePieces.DesertPyramid {
     // seed 254280

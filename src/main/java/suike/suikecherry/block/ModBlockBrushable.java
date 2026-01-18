@@ -1,44 +1,34 @@
 package suike.suikecherry.block;
 
-import java.util.List;
-import java.util.Random;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.sound.Sound;
-import suike.suikecherry.sound.ModSoundType;
-import suike.suikecherry.item.ItemBase;
-import suike.suikecherry.item.ModItemBrush;
-import suike.suikecherry.tileentity.BrushableTileEntity;
-import suike.suikecherry.data.TreasureData;
-import suike.suikecherry.proxy.ClientProxy;
-import suike.suikecherry.particle.ModParticle;
-import suike.suikecherry.packet.PacketHandler;
-import suike.suikecherry.packet.packets.SpawnParticlesPacket;
-
-import net.minecraft.init.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockFalling;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.item.EntityFallingBlock;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.BlockFalling;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.block.material.Material;
-import net.minecraft.world.World;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.item.EntityItem;
-import net.minecraft.entity.item.EntityFallingBlock;
-
+import net.minecraft.util.NonNullList;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.data.TreasureData;
+import suike.suikecherry.item.ModItemBrush;
+import suike.suikecherry.packet.PacketHandler;
+import suike.suikecherry.packet.packets.SpawnParticlesPacket;
+import suike.suikecherry.sound.Sound;
+import suike.suikecherry.tileentity.BrushableTileEntity;
+
+import java.util.List;
+import java.util.Random;
 
 // 可疑的方块
 public class ModBlockBrushable extends BlockFalling {

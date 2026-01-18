@@ -1,19 +1,16 @@
 package suike.suikecherry.world.biome;
 
-import java.util.*;
-
-import suike.suikecherry.inter.IBiomes;
-import suike.suikecherry.config.ConfigValue;
-
-import rtg.api.RTGAPI;
 import biomesoplenty.api.enums.BOPClimates;
-
 import net.minecraft.world.biome.Biome;
-
-import net.minecraftforge.fml.common.Loader;
-import net.minecraftforge.fml.common.event.FMLInterModComms;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.common.BiomeDictionary;
+import net.minecraftforge.fml.common.Loader;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import rtg.api.RTGAPI;
+import suike.suikecherry.config.ConfigValue;
+import suike.suikecherry.inter.IBiomes;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Biomes {
     public static void register() {

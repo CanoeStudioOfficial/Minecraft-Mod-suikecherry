@@ -1,10 +1,10 @@
 package suike.suikecherry.inter;
 
-import java.util.Map;
-
-import org.objectweb.asm.*;
-
 import com.google.common.collect.ImmutableMap;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.MethodVisitor;
+
+import java.util.Map;
 
 public interface IMethod {
 

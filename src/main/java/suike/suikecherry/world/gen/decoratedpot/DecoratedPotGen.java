@@ -1,23 +1,19 @@
 package suike.suikecherry.world.gen.decoratedpot;
 
-import java.util.List;
-import java.util.Random;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.item.ModItemPotterySherd;
-import suike.suikecherry.block.BlockBase;
-import suike.suikecherry.block.ModBlockDecoratedPot;
-import suike.suikecherry.tileentity.DecoratedPotTileEntity;
-
-import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.world.World;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.tileentity.TileEntity;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.nbt.NBTTagString;
-import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.block.ModBlockDecoratedPot;
+import suike.suikecherry.item.ModItemPotterySherd;
+import suike.suikecherry.tileentity.DecoratedPotTileEntity;
+
+import java.util.Random;
 
 public class DecoratedPotGen {
 

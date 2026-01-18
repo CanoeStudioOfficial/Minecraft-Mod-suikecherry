@@ -1,12 +1,14 @@
 package suike.suikecherry.data;
 
-import java.util.*;
-
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemEnchantedBook;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentData;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemEnchantedBook;
+import net.minecraft.item.ItemStack;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class EnchData {
     private static final List<EnchantmentData> ALL_POSSIBLE_ENCHANTMENTS = new ArrayList<>();

@@ -1,37 +1,34 @@
 //*
 package suike.suikecherry.expand.jei;
 
-import java.util.*;
-import java.util.stream.Collectors;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.item.ItemBase;
-import suike.suikecherry.item.ModItemSmithingTemplate;
-import suike.suikecherry.block.BlockBase;
-import suike.suikecherry.block.ModBlockSmithingTable;
-import suike.suikecherry.data.TrimData;
-import suike.suikecherry.client.render.entity.RenderPlayerModel;
-
-import mezz.jei.api.*;
-import mezz.jei.api.gui.*;
-import mezz.jei.api.recipe.IRecipeWrapper;
-import mezz.jei.api.recipe.IRecipeCategory;
-import mezz.jei.api.recipe.IRecipeCategoryRegistration;
+import com.google.common.collect.Lists;
+import mezz.jei.api.IGuiHelper;
+import mezz.jei.api.IModPlugin;
+import mezz.jei.api.IModRegistry;
+import mezz.jei.api.JEIPlugin;
+import mezz.jei.api.gui.IDrawable;
+import mezz.jei.api.gui.IGuiItemStackGroup;
+import mezz.jei.api.gui.IRecipeLayout;
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.ingredients.VanillaTypes;
-
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+import mezz.jei.api.recipe.IRecipeCategory;
+import mezz.jei.api.recipe.IRecipeCategoryRegistration;
+import mezz.jei.api.recipe.IRecipeWrapper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.resources.I18n;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.oredict.OreDictionary;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.data.TrimData;
+import suike.suikecherry.item.ItemBase;
+import suike.suikecherry.item.ModItemSmithingTemplate;
 
-import com.google.common.collect.Lists;
+import java.util.ArrayList;
+import java.util.List;
 
 @JEIPlugin
 public class SmithingTableJEIPlugin implements IModPlugin {

@@ -1,6 +1,7 @@
 package suike.suikecherry.asm.advice;
 
-import org.objectweb.asm.*;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
 
 public class AdviceAdapterData {
     public final MethodVisitor mv;

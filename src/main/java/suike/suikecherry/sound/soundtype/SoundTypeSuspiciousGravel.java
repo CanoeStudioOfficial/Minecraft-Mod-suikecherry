@@ -1,8 +1,8 @@
 package suike.suikecherry.sound.soundtype;
 
 import net.minecraft.block.SoundType;
-import net.minecraft.util.SoundEvent;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundEvent;
 
 public class SoundTypeSuspiciousGravel extends SoundType {
     public SoundTypeSuspiciousGravel() {

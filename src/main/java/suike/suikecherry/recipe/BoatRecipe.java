@@ -1,24 +1,21 @@
 package suike.suikecherry.recipe;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.expand.Examine;
-import suike.suikecherry.item.ItemBase;
-import suike.suikecherry.block.BlockBase;
-import suike.suikecherry.config.ConfigValue;
-
-import net.minecraft.init.Items;
+import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.block.Block;
 import net.minecraft.util.ResourceLocation;
-
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreIngredient;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.config.ConfigValue;
+import suike.suikecherry.item.ItemBase;
 
 public class BoatRecipe {
     public static void register(RegistryEvent.Register<IRecipe> event) {

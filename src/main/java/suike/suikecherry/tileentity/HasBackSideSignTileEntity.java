@@ -1,45 +1,38 @@
 package suike.suikecherry.tileentity;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.sound.Sound;
-import suike.suikecherry.inter.IBlockSign;
-import suike.suikecherry.inter.IBlockHangingSign;
-import suike.suikecherry.block.ModBlockSign;
-import suike.suikecherry.block.ModBlockSignWall;
-import suike.suikecherry.block.ModBlockHangingSign;
-import suike.suikecherry.block.ModBlockHangingSignAttached;
-import suike.suikecherry.client.gui.GuiID;
-import suike.suikecherry.client.gui.GuiEditSign;
-import suike.suikecherry.client.render.tileentity.HasBackSideSignTileEntityRender;
-import suike.suikecherry.data.AxisPosition;
-import suike.suikecherry.data.SignGuiTexturesData;
-import suike.suikecherry.packet.PacketHandler;
-import suike.suikecherry.packet.packets.SignTextUpdatePacket;
-
-import net.minecraft.item.ItemStack;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockSign;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldServer;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextComponentString;
 import net.minecraft.client.resources.I18n;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntitySign;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SPacketUpdateTileEntity;
 import net.minecraft.server.MinecraftServer;
-
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntitySign;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
 import net.minecraftforge.fml.client.FMLClientHandler;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.oredict.OreDictionary;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.block.ModBlockHangingSign;
+import suike.suikecherry.block.ModBlockHangingSignAttached;
+import suike.suikecherry.block.ModBlockSign;
+import suike.suikecherry.block.ModBlockSignWall;
+import suike.suikecherry.client.gui.GuiID;
+import suike.suikecherry.client.render.tileentity.HasBackSideSignTileEntityRender;
+import suike.suikecherry.data.AxisPosition;
+import suike.suikecherry.data.SignGuiTexturesData;
+import suike.suikecherry.inter.IBlockHangingSign;
+import suike.suikecherry.inter.IBlockSign;
+import suike.suikecherry.packet.PacketHandler;
+import suike.suikecherry.packet.packets.SignTextUpdatePacket;
+import suike.suikecherry.sound.Sound;
 
 public class HasBackSideSignTileEntity extends TileEntitySign {
     // 背面文本

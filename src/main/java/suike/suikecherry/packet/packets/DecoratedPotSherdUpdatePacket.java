@@ -1,21 +1,16 @@
 package suike.suikecherry.packet.packets;
 
-import suike.suikecherry.tileentity.DecoratedPotTileEntity.PotTileClient;
-
-import net.minecraft.world.World;
-import net.minecraft.item.ItemStack;
+import io.netty.buffer.ByteBuf;
 import net.minecraft.client.Minecraft;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
-
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
+import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.fml.common.network.ByteBufUtils;
-import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
-import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
-import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
-
-import io.netty.buffer.ByteBuf;
+import suike.suikecherry.tileentity.DecoratedPotTileEntity.PotTileClient;
 
 public class DecoratedPotSherdUpdatePacket implements IMessage {
     private BlockPos pos = BlockPos.ORIGIN;

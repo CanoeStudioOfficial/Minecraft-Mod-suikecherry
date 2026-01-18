@@ -1,18 +1,16 @@
 package suike.suikecherry.client.render.tileentity;
 
-import java.util.Map;
-import java.util.List;
-
-import suike.suikecherry.data.AxisPosition;
-import suike.suikecherry.block.ModBlockSignWall;
-import suike.suikecherry.tileentity.HasBackSideSignTileEntity;
-
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.client.renderer.GlStateManager;
+import com.google.common.collect.ImmutableMap;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.GuiUtilRenderComponents;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.util.text.ITextComponent;
+import suike.suikecherry.block.ModBlockSignWall;
+import suike.suikecherry.data.AxisPosition;
+import suike.suikecherry.tileentity.HasBackSideSignTileEntity;
 
-import com.google.common.collect.ImmutableMap;
+import java.util.List;
+import java.util.Map;
 
 public class HasBackSideSignTileEntityRender extends TileEntityRender<HasBackSideSignTileEntity> {
     private static final double fixedY = 0.8343;

@@ -1,38 +1,33 @@
 package suike.suikecherry.world.gen.structure.trailruins;
 
-import java.util.List;
-import java.util.Arrays;
-import java.util.Random;
-import java.io.InputStream;
-import java.io.IOException;
-
+import com.google.common.collect.Lists;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
+import net.minecraft.nbt.CompressedStreamTools;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Rotation;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
+import net.minecraft.world.gen.structure.StructureBoundingBox;
+import net.minecraft.world.gen.structure.StructureComponent;
+import net.minecraft.world.gen.structure.template.ITemplateProcessor;
+import net.minecraft.world.gen.structure.template.PlacementSettings;
+import net.minecraft.world.gen.structure.template.Template;
+import net.minecraft.world.gen.structure.template.TemplateManager;
 import suike.suikecherry.SuiKe;
-import suike.suikecherry.config.CreateConfigFile;
 import suike.suikecherry.block.BlockBase;
-import suike.suikecherry.block.ModBlockBrushable;
-import suike.suikecherry.tileentity.BrushableTileEntity;
 import suike.suikecherry.data.AxisPosition;
 import suike.suikecherry.data.TrailRuinsBuildSlot;
 import suike.suikecherry.data.TreasureData.Structure;
+import suike.suikecherry.tileentity.BrushableTileEntity;
 
-import net.minecraft.init.Blocks;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldServer;
-import net.minecraft.util.Rotation;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.gen.structure.template.Template;
-import net.minecraft.world.gen.structure.StructureComponent;
-import net.minecraft.world.gen.structure.StructureBoundingBox;
-import net.minecraft.world.gen.structure.template.TemplateManager;
-import net.minecraft.world.gen.structure.template.PlacementSettings;
-import net.minecraft.world.gen.structure.template.ITemplateProcessor;
-import net.minecraft.world.gen.structure.ComponentScatteredFeaturePieces;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.CompressedStreamTools;
-
-import com.google.common.collect.Lists;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
 
 public class TrailRuins extends StructureComponent {
     // -6283703233594719083 /tp -1694 70 -1534

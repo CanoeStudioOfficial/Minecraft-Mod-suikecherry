@@ -1,17 +1,10 @@
 package suike.suikecherry.client.render.entity.sniffer;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.entity.sniffer.SnifferEntity;
-
-import net.minecraft.entity.Entity;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.util.SoundEvent;
-import net.minecraft.util.SoundCategory;
+import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.ResourceLocation;
-
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import suike.suikecherry.entity.sniffer.SnifferEntity;
 
 public class SnifferEntityModel extends ModelBase {
     private SnifferEntity sniffer;

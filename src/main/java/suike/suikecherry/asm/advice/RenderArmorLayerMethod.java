@@ -1,13 +1,11 @@
 package suike.suikecherry.asm.advice;
 
-import java.util.Map;
-
+import com.google.common.collect.ImmutableMap;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
 import suike.suikecherry.inter.IMethod;
 
-import org.objectweb.asm.*;
-import org.objectweb.asm.commons.AdviceAdapter;
-
-import com.google.common.collect.ImmutableMap;
+import java.util.Map;
 
 public class RenderArmorLayerMethod extends MethodVisitor implements IMethod {
     private String type = "0"; // 无类型

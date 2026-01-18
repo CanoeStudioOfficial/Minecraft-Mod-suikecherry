@@ -1,27 +1,24 @@
 package suike.suikecherry.world.gen.structure.desertwell;
 
-import java.util.Random;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.block.BlockBase;
-import suike.suikecherry.block.ModBlockBrushable;
-import suike.suikecherry.tileentity.BrushableTileEntity;
-import suike.suikecherry.data.TreasureData.Structure;
-
-import net.minecraft.init.Blocks;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.gen.structure.template.Template;
-import net.minecraft.world.gen.structure.StructureComponent;
 import net.minecraft.world.gen.structure.StructureBoundingBox;
-import net.minecraft.world.gen.structure.template.TemplateManager;
-import net.minecraft.world.gen.structure.template.PlacementSettings;
+import net.minecraft.world.gen.structure.StructureComponent;
 import net.minecraft.world.gen.structure.template.ITemplateProcessor;
-import net.minecraft.world.gen.structure.ComponentScatteredFeaturePieces;
-import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.world.gen.structure.template.PlacementSettings;
+import net.minecraft.world.gen.structure.template.Template;
+import net.minecraft.world.gen.structure.template.TemplateManager;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.data.TreasureData.Structure;
+import suike.suikecherry.tileentity.BrushableTileEntity;
+
+import java.util.Random;
 
 public class DesertWell extends StructureComponent {
 

@@ -1,14 +1,13 @@
 package suike.suikecherry.data;
 
-import java.util.*;
-import java.util.stream.Collectors;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.config.*;
-import suike.suikecherry.item.ItemBase;
-
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import suike.suikecherry.config.Config;
+import suike.suikecherry.config.TreasureListRead;
+import suike.suikecherry.item.ItemBase;
+
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class TreasureData {
     private final String treasure;

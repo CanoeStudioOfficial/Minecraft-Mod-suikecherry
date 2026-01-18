@@ -1,41 +1,38 @@
 package suike.suikecherry.block;
 
-import java.util.List;
-import java.util.Random;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.sound.Sound;
-import suike.suikecherry.item.ModItemBrush;
-import suike.suikecherry.particle.ModParticle;
-import suike.suikecherry.packet.PacketHandler;
-import suike.suikecherry.packet.packets.SpawnParticlesPacket;
-import suike.suikecherry.entity.sniffer.SnifferEntity;
-
-import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
+import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.BlockStateContainer;
-import net.minecraft.block.properties.PropertyInteger;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.BlockRenderLayer;
-import net.minecraft.world.World;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.entity.Entity;
-import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
-
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.fml.common.network.NetworkRegistry;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.entity.sniffer.SnifferEntity;
+import suike.suikecherry.item.ModItemBrush;
+import suike.suikecherry.packet.PacketHandler;
+import suike.suikecherry.packet.packets.SpawnParticlesPacket;
+import suike.suikecherry.particle.ModParticle;
+import suike.suikecherry.sound.Sound;
+
+import java.util.List;
+import java.util.Random;
 
 // 嗅探兽蛋
 public class ModBlockSnifferEgg extends Block {

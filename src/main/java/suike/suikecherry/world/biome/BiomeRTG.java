@@ -1,21 +1,18 @@
 package suike.suikecherry.world.biome;
 
-import java.util.*;
-
-import rtg.api.config.BiomeConfig;
-import rtg.api.world.RTGWorld;
-import rtg.api.world.deco.DecoBase;
-import rtg.api.world.terrain.TerrainBase;
-import rtg.api.world.surface.SurfaceBase;
-import rtg.api.world.surface.SurfaceGeneric;
-import rtg.api.world.biome.RealisticBiomeBase;
-import rtg.api.world.gen.feature.tree.rtg.TreeRTG;
-
 import net.minecraft.init.Blocks;
-import net.minecraft.block.Block;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.chunk.ChunkPrimer;
+import rtg.api.world.RTGWorld;
+import rtg.api.world.biome.RealisticBiomeBase;
+import rtg.api.world.deco.DecoBase;
+import rtg.api.world.gen.feature.tree.rtg.TreeRTG;
+import rtg.api.world.surface.SurfaceBase;
+import rtg.api.world.surface.SurfaceGeneric;
+import rtg.api.world.terrain.TerrainBase;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class BiomeRTG extends RealisticBiomeBase {
 

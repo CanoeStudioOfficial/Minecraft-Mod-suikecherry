@@ -1,12 +1,10 @@
 package suike.suikecherry.data;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.expand.Examine;
-
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.LootTableList;
-
 import net.minecraftforge.fml.common.Loader;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.expand.Examine;
 
 public class LootTableData {
     public static final ResourceLocation underwater_ruin = registerLootTable("chests/underwater_ruin");

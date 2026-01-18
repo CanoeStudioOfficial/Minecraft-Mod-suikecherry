@@ -1,27 +1,24 @@
 package suike.suikecherry.world.gen.structure.oceanruins;
 
-import java.util.*;
-
-import net.minecraft.util.EnumFacing;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.ChunkPos;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeOcean;
-import net.minecraft.world.storage.MapStorage;
-import net.minecraft.world.storage.WorldSavedData;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
-import net.minecraft.world.gen.structure.StructureStart;
 import net.minecraft.world.gen.structure.StructureBoundingBox;
-import net.minecraft.nbt.NBTTagList;
-import net.minecraft.nbt.NBTTagCompound;
-
+import net.minecraft.world.gen.structure.StructureStart;
+import net.minecraft.world.storage.MapStorage;
+import net.minecraft.world.storage.WorldSavedData;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
-import com.google.common.collect.Lists;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
 public class OceanRuinsGen implements IWorldGenerator {
     @Override

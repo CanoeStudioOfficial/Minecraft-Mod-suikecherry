@@ -1,13 +1,11 @@
 package suike.suikecherry.item;
 
-import java.util.List;
-import java.util.ArrayList;
-
-import suike.suikecherry.SuiKe;
-
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.creativetab.CreativeTabs;
+import suike.suikecherry.SuiKe;
+
+import java.util.ArrayList;
+import java.util.List;
 
 // 陶片物品
 public class ModItemPotterySherd extends Item {

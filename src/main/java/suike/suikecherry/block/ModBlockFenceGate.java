@@ -1,13 +1,10 @@
 package suike.suikecherry.block;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.item.ItemBase;
-
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.block.BlockFenceGate;
 import net.minecraft.block.BlockPlanks.EnumType;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemBlock;
+import suike.suikecherry.SuiKe;
 
 //栅栏门类
 public class ModBlockFenceGate extends BlockFenceGate {

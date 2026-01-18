@@ -1,20 +1,18 @@
 package suike.suikecherry.client.render.tileentity;
 
-import java.util.Map;
-import java.util.List;
-
-import suike.suikecherry.data.AxisPosition;
-import suike.suikecherry.tileentity.HangingSignTileEntity;
-import suike.suikecherry.tileentity.HasBackSideSignTileEntity;
-
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.ITextComponent;
+import com.google.common.collect.ImmutableMap;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.GuiUtilRenderComponents;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.text.ITextComponent;
+import suike.suikecherry.data.AxisPosition;
+import suike.suikecherry.tileentity.HangingSignTileEntity;
+import suike.suikecherry.tileentity.HasBackSideSignTileEntity;
 
-import com.google.common.collect.ImmutableMap;
+import java.util.List;
+import java.util.Map;
 
 // 悬挂告示牌渲染类
 public class HangingSignTileEntityRender extends TileEntityRender<HangingSignTileEntity> {

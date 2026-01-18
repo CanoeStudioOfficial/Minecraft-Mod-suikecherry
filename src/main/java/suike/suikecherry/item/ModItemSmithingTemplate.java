@@ -1,16 +1,14 @@
 package suike.suikecherry.item;
 
-import java.util.List;
-import java.util.ArrayList;
-
-import suike.suikecherry.SuiKe;
-
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
-
 import net.minecraftforge.fml.common.Loader;
+import suike.suikecherry.SuiKe;
+
+import java.util.ArrayList;
+import java.util.List;
 
 // 锻造模板
 public class ModItemSmithingTemplate extends Item {

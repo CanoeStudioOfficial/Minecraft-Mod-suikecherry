@@ -1,28 +1,22 @@
 package suike.suikecherry.data;
 
-import java.util.*;
-import java.io.InputStream;
-import java.awt.image.BufferedImage;
-import javax.imageio.ImageIO;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.item.ItemBase;
-
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.IResource;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.nbt.NBTTagString;
-import net.minecraft.nbt.NBTTagCompound;
-
-import net.minecraftforge.oredict.OreDictionary;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.util.Constants;
-
+import net.minecraftforge.oredict.OreDictionary;
 import org.apache.commons.io.IOUtils;
+import suike.suikecherry.SuiKe;
+
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.InputStream;
+import java.util.*;
 
 public class TrimData {
     // 盔甲材质列表

@@ -1,38 +1,33 @@
 package suike.suikecherry.tileentity;
 
-import java.io.*;
-import java.util.Random;
-
-import suike.suikecherry.sound.Sound;
-import suike.suikecherry.item.ItemBase;
-import suike.suikecherry.item.ModItemPotterySherd;
-import suike.suikecherry.block.BlockBase;
-import suike.suikecherry.block.ModBlockBrushable;
-import suike.suikecherry.packet.PacketHandler;
-import suike.suikecherry.packet.packets.BrushableBlockUpdatePacket;
-import suike.suikecherry.data.EnchData;
-import suike.suikecherry.data.TreasureData;
-import suike.suikecherry.data.TreasureData.Structure;
-import suike.suikecherry.data.AxisPosition;
-import suike.suikecherry.achievement.ModAdvancements;
-
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.world.World;
-import net.minecraft.util.ITickable;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.tileentity.TileEntity;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Enchantments;
-import net.minecraft.enchantment.EnchantmentHelper;
-
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.ITickable;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import suike.suikecherry.achievement.ModAdvancements;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.block.ModBlockBrushable;
+import suike.suikecherry.data.EnchData;
+import suike.suikecherry.data.TreasureData;
+import suike.suikecherry.data.TreasureData.Structure;
+import suike.suikecherry.item.ItemBase;
+import suike.suikecherry.item.ModItemPotterySherd;
+import suike.suikecherry.packet.PacketHandler;
+import suike.suikecherry.packet.packets.BrushableBlockUpdatePacket;
+import suike.suikecherry.sound.Sound;
+
+import java.util.Random;
 
 public class BrushableTileEntity extends TileEntity implements ITickable {
     private int dusted;

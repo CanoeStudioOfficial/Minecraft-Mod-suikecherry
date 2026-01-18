@@ -1,28 +1,22 @@
 package suike.suikecherry.client.render.armor;
 
-import java.util.Map;
-import java.util.HashMap;
-
-import suike.suikecherry.data.TrimData;
-import suike.suikecherry.expand.Examine;
-
+import com.google.common.collect.ImmutableMap;
 import goblinbob.mobends.standard.client.model.armor.ArmorWrapper;
-
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemArmor;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.model.ModelArmorStandArmor;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelBiped;
-import net.minecraft.client.model.ModelArmorStandArmor;
 import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityArmorStand;
 import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+import suike.suikecherry.data.TrimData;
+import suike.suikecherry.expand.Examine;
 
-import net.minecraftforge.fml.common.Loader;
-
-import com.google.common.collect.ImmutableMap;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ArmorTrimRender {
 

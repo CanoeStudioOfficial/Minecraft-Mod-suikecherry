@@ -1,38 +1,34 @@
 package suike.suikecherry.world.gen.structure.oceanruins;
 
-import java.util.*;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.block.BlockBase;
-import suike.suikecherry.block.ModBlockBrushable;
-import suike.suikecherry.expand.Examine;
-import suike.suikecherry.expand.oe.SpawnDrowned;
-import suike.suikecherry.data.EnchData;
-import suike.suikecherry.data.LootTableData;
-import suike.suikecherry.data.TreasureData.Structure;
-import suike.suikecherry.tileentity.BrushableTileEntity;
-
-import net.minecraft.init.Items;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.ItemStack;
+import com.google.common.collect.Lists;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldServer;
-import net.minecraft.world.gen.structure.template.Template;
-import net.minecraft.world.gen.structure.StructureComponent;
-import net.minecraft.world.gen.structure.StructureBoundingBox;
-import net.minecraft.world.gen.structure.template.TemplateManager;
-import net.minecraft.world.gen.structure.template.PlacementSettings;
-import net.minecraft.world.gen.structure.template.ITemplateProcessor;
+import net.minecraft.init.Blocks;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.tileentity.TileEntityChest;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.tileentity.TileEntityChest;
-import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
+import net.minecraft.world.gen.structure.StructureBoundingBox;
+import net.minecraft.world.gen.structure.StructureComponent;
+import net.minecraft.world.gen.structure.template.ITemplateProcessor;
+import net.minecraft.world.gen.structure.template.PlacementSettings;
+import net.minecraft.world.gen.structure.template.Template;
+import net.minecraft.world.gen.structure.template.TemplateManager;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.block.ModBlockBrushable;
+import suike.suikecherry.data.LootTableData;
+import suike.suikecherry.data.TreasureData.Structure;
+import suike.suikecherry.expand.Examine;
+import suike.suikecherry.expand.oe.SpawnDrowned;
+import suike.suikecherry.tileentity.BrushableTileEntity;
 
-import com.google.common.collect.Lists;
+import java.util.List;
+import java.util.Random;
 
 public class OceanRuins extends StructureComponent {
     // seed 8700015448746822241 // seed 254280 /tp 4194 35 -462

@@ -1,15 +1,12 @@
 package suike.suikecherry.sound;
 
-import suike.suikecherry.SuiKe;
-
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.SoundEvent;
-import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.client.Minecraft;
-
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.SoundEvent;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import suike.suikecherry.SuiKe;
 
 //播放音效方法
 public class Sound {

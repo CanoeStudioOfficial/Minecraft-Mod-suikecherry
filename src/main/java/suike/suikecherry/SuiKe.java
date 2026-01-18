@@ -1,30 +1,28 @@
 package suike.suikecherry;
 
-import suike.suikecherry.asm.*;
-import suike.suikecherry.item.*;
-import suike.suikecherry.data.*;
-import suike.suikecherry.block.*;
-import suike.suikecherry.expand.*;
-import suike.suikecherry.config.*;
-import suike.suikecherry.world.biome.Biomes;
-import suike.suikecherry.world.gen.structure.*;
-import suike.suikecherry.proxy.CommonProxy;
-import suike.suikecherry.packet.PacketHandler;
-import suike.suikecherry.achievement.ModAdvancements;
-
 import net.minecraft.client.Minecraft;
-import net.minecraft.server.MinecraftServer;
-
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.event.FMLConstructionEvent;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
-
-import org.apache.logging.log4j.Logger;
+import suike.suikecherry.achievement.ModAdvancements;
+import suike.suikecherry.asm.ASMCoreMod;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.config.Config;
+import suike.suikecherry.data.EnchData;
+import suike.suikecherry.data.LootTableData;
+import suike.suikecherry.data.TreasureData;
+import suike.suikecherry.expand.Examine;
+import suike.suikecherry.expand.Expand;
+import suike.suikecherry.item.ModItemBrush;
+import suike.suikecherry.item.ModItemSign;
+import suike.suikecherry.packet.PacketHandler;
+import suike.suikecherry.proxy.CommonProxy;
+import suike.suikecherry.world.biome.Biomes;
+import suike.suikecherry.world.gen.structure.ModStructure;
 
 @Mod(
     modid = SuiKe.MODID, name = SuiKe.NAME, version = SuiKe.VERSION,

@@ -1,26 +1,19 @@
 package suike.suikecherry.item;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.sound.Sound;
-import suike.suikecherry.block.BlockBase;
-import suike.suikecherry.block.ModBlockSlab;
-
-import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemSlab;
-import net.minecraft.item.ItemStack;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.block.BlockSlab.EnumBlockHalf;
-import net.minecraft.world.World;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.EnumActionResult;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemSlab;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.block.ModBlockSlab;
+import suike.suikecherry.sound.Sound;
 
 //台阶物品类
 public class ModItemSlab extends ItemSlab {

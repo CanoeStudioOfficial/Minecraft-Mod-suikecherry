@@ -1,10 +1,9 @@
 package suike.suikecherry.client.render.item;
 
-import suike.suikecherry.item.ModItmeDecoratedPot;
-
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import suike.suikecherry.item.ModItmeDecoratedPot;
 
 public class ItemRender {
     public static void render(ItemStack stack) {

@@ -1,13 +1,10 @@
 package suike.suikecherry.block;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.item.ItemBase;
-
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.block.BlockPressurePlate;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemBlock;
+import suike.suikecherry.SuiKe;
 
 //压力板类
 public class ModBlockPressurePlate extends BlockPressurePlate {

@@ -1,20 +1,19 @@
 package suike.suikecherry.event;
 
-import suike.suikecherry.SuiKe;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.storage.loot.*;
+import net.minecraft.world.storage.loot.conditions.LootCondition;
+import net.minecraft.world.storage.loot.conditions.RandomChance;
+import net.minecraft.world.storage.loot.functions.LootFunction;
+import net.minecraft.world.storage.loot.functions.SetCount;
+import net.minecraftforge.event.LootTableLoadEvent;
+import net.minecraftforge.fml.common.Loader;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import suike.suikecherry.data.LootTableData;
+import suike.suikecherry.expand.Examine;
 import suike.suikecherry.item.ItemBase;
 import suike.suikecherry.item.ModItemSmithingTemplate;
-import suike.suikecherry.expand.Examine;
-import suike.suikecherry.data.LootTableData;
-
-import net.minecraft.world.storage.loot.*;
-import net.minecraft.world.storage.loot.functions.*;
-import net.minecraft.world.storage.loot.conditions.*;
-import net.minecraft.util.ResourceLocation;
-
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Loader;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.event.LootTableLoadEvent;
 
 @Mod.EventBusSubscriber
 public class LootTableEvent {

@@ -1,12 +1,9 @@
 package suike.suikecherry.recipe;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.block.BlockBase;
-
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import suike.suikecherry.block.BlockBase;
 //熔炉配方
 public class FurnaceRecipe {
     public static void register() {

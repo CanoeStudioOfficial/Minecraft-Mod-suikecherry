@@ -1,28 +1,26 @@
 package suike.suikecherry.tileentity;
 
-import suike.suikecherry.sound.Sound;
-import suike.suikecherry.item.ItemBase;
-import suike.suikecherry.block.ModBlockHangingSign;
-import suike.suikecherry.block.ModBlockHangingSignAttached;
-import suike.suikecherry.packet.PacketHandler;
-import suike.suikecherry.packet.packets.HangingSignUpdatePacket;
-import suike.suikecherry.client.render.tileentity.HangingSignTileEntityRender;
-import suike.suikecherry.data.AxisPosition;
-
-import net.minecraft.item.ItemStack;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.world.World;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.entity.player.EntityPlayer;
-
-import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.items.ItemStackHandler;
+import suike.suikecherry.block.ModBlockHangingSign;
+import suike.suikecherry.block.ModBlockHangingSignAttached;
+import suike.suikecherry.client.render.tileentity.HangingSignTileEntityRender;
+import suike.suikecherry.data.AxisPosition;
+import suike.suikecherry.item.ItemBase;
+import suike.suikecherry.packet.PacketHandler;
+import suike.suikecherry.packet.packets.HangingSignUpdatePacket;
+import suike.suikecherry.sound.Sound;
 
 // 悬挂告示牌 TileEntity 类
 public class HangingSignTileEntity extends HasBackSideSignTileEntity {

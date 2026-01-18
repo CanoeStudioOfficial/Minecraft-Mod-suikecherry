@@ -1,7 +1,7 @@
 package suike.suikecherry.config;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class ConfigValue {
     /*配置文件版本*/public static final int modsConfigVersion = 24;

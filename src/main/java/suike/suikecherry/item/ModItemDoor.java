@@ -1,23 +1,9 @@
 package suike.suikecherry.item;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.block.ModBlockDoor;
-import suike.suikecherry.sound.Sound;
-
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemDoor;
 import net.minecraft.item.ItemStack;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockDoor;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.world.World;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumActionResult;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.player.EntityPlayer;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.block.ModBlockDoor;
 
 //门物品
 public class ModItemDoor extends ItemDoor {

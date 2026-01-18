@@ -1,20 +1,14 @@
 package suike.suikecherry.config;
 
-import java.util.Map;
-import java.util.List;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Files;
-import java.nio.charset.StandardCharsets;
-
 import suike.suikecherry.data.TreasureData;
 
-import net.minecraftforge.common.config.Configuration;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class TreasureListRead {
     private static Map<String, List<TreasureData>> treasureMap = new HashMap<>();

@@ -1,17 +1,5 @@
 package suike.suikecherry.world.gen.cherry;
 
-import java.util.List;
-import java.util.Random;
-import java.util.Arrays;
-import java.util.function.Consumer;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.block.*;
-import suike.suikecherry.expand.Examine;
-import suike.suikecherry.expand.futuremc.PlaceBeeHive;
-import suike.suikecherry.config.ConfigValue;
-
-import net.minecraft.init.Blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLog;
 import net.minecraft.block.state.IBlockState;
@@ -19,6 +7,16 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.block.ModBlockLog;
+import suike.suikecherry.config.ConfigValue;
+import suike.suikecherry.expand.Examine;
+import suike.suikecherry.expand.futuremc.PlaceBeeHive;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+import java.util.function.Consumer;
 
 //樱花树
 public class CherryTreeGen extends WorldGenAbstractTree {

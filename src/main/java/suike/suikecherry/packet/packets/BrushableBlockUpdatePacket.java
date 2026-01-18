@@ -1,22 +1,19 @@
 package suike.suikecherry.packet.packets;
 
-import suike.suikecherry.tileentity.BrushableTileEntity;
-
-import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
+import io.netty.buffer.ByteBuf;
 import net.minecraft.client.Minecraft;
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.tileentity.TileEntity;
-
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.ByteBufUtils;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
-import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
-
-import io.netty.buffer.ByteBuf;
+import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+import suike.suikecherry.tileentity.BrushableTileEntity;
 
 public class BrushableBlockUpdatePacket implements IMessage {
     private BlockPos pos = BlockPos.ORIGIN;

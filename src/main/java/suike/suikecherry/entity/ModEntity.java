@@ -1,25 +1,23 @@
 package suike.suikecherry.entity;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.entity.boat.*;
-import suike.suikecherry.entity.boat.boat.*;
-import suike.suikecherry.entity.boat.chestboat.*;
-import suike.suikecherry.entity.sniffer.SnifferEntity;
-import suike.suikecherry.config.ConfigValue;
-import suike.suikecherry.client.render.entity.boat.ModBoatRenderFactory;
-import suike.suikecherry.client.render.entity.sniffer.SnifferEntityRenderFactory;
-
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.util.ResourceLocation;
-
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.registry.EntityEntry;
-import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.EntityEntry;
+import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.client.render.entity.boat.ModBoatRenderFactory;
+import suike.suikecherry.client.render.entity.sniffer.SnifferEntityRenderFactory;
+import suike.suikecherry.config.ConfigValue;
+import suike.suikecherry.entity.boat.ModEntityBoat;
+import suike.suikecherry.entity.boat.boat.BambooRaft;
+import suike.suikecherry.entity.boat.boat.CherryBoat;
+import suike.suikecherry.entity.boat.chestboat.*;
+import suike.suikecherry.entity.sniffer.SnifferEntity;
 
 @Mod.EventBusSubscriber
 public class ModEntity {

@@ -1,17 +1,18 @@
 package suike.suikecherry.config;
 
-import java.io.*;
-import java.util.List;
-import java.util.ArrayList;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
-import java.nio.charset.StandardCharsets;
-
+import net.minecraftforge.common.config.Configuration;
 import suike.suikecherry.SuiKe;
 
-import net.minecraftforge.common.config.Configuration;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CreateConfigFile {
 

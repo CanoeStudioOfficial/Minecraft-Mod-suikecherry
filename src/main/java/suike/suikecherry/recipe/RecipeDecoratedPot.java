@@ -1,38 +1,30 @@
 package suike.suikecherry.recipe;
 
-import java.util.List;
-import java.util.ArrayList;
-import javax.annotation.Nullable;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.item.ItemBase;
-import suike.suikecherry.item.ModItemPotterySherd;
-import suike.suikecherry.block.BlockBase;
-import suike.suikecherry.achievement.ModAdvancements;
-
 import net.minecraft.init.Items;
-import net.minecraft.init.Blocks;
+import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.crafting.ShapedRecipes;
-import net.minecraft.block.Block;
-import net.minecraft.world.World;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.inventory.InventoryCrafting;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.nbt.NBTTagString;
-import net.minecraft.nbt.NBTTagCompound;
-
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraft.util.NonNullList;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
 import net.minecraftforge.common.util.Constants;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.common.gameevent.PlayerEvent;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.registries.IForgeRegistryModifiable;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.achievement.ModAdvancements;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.item.ModItemPotterySherd;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @EventBusSubscriber
 public class RecipeDecoratedPot extends ShapedRecipes {

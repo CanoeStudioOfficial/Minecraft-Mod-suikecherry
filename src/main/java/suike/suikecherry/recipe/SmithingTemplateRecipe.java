@@ -1,26 +1,22 @@
 package suike.suikecherry.recipe;
 
-import java.util.stream.IntStream;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.expand.Examine;
-import suike.suikecherry.item.ItemBase;
-import suike.suikecherry.item.ModItemSmithingTemplate;
-
-import net.minecraft.init.Items;
+import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.block.Block;
 import net.minecraft.util.ResourceLocation;
-
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.oredict.OreIngredient;
 import net.minecraftforge.oredict.OreDictionary;
+import net.minecraftforge.oredict.OreIngredient;
 import net.minecraftforge.oredict.ShapedOreRecipe;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.item.ItemBase;
+import suike.suikecherry.item.ModItemSmithingTemplate;
+
+import java.util.stream.IntStream;
 
 public class SmithingTemplateRecipe {
     public static void register(RegistryEvent.Register<IRecipe> event) {

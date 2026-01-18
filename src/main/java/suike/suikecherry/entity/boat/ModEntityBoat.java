@@ -1,17 +1,14 @@
 package suike.suikecherry.entity.boat;
 
-import java.util.Map;
-import java.util.HashMap;
-
+import net.minecraft.entity.item.EntityBoat;
+import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
 import suike.suikecherry.data.BoatData;
 import suike.suikecherry.item.ModItemBoat;
 
-import net.minecraft.item.Item;
-import net.minecraft.world.World;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.item.EntityBoat;
-import net.minecraft.entity.player.EntityPlayer;
+import java.util.HashMap;
+import java.util.Map;
 
 // 船类
 public abstract class ModEntityBoat extends EntityBoat {

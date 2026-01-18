@@ -1,13 +1,11 @@
 package suike.suikecherry.data;
 
-import java.util.List;
-
+import com.google.common.collect.Lists;
+import net.minecraft.util.ResourceLocation;
 import suike.suikecherry.SuiKe;
 import suike.suikecherry.item.ModItemBoat;
 
-import net.minecraft.util.ResourceLocation;
-
-import com.google.common.collect.Lists;
+import java.util.List;
 
 public class BoatData {
     private final String boatName;

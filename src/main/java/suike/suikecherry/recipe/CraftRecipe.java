@@ -1,23 +1,20 @@
 package suike.suikecherry.recipe;
 
-import java.util.List;
-import java.util.ArrayList;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.config.ConfigValue;
-import suike.suikecherry.item.ItemBase;
-import suike.suikecherry.block.BlockBase;
-
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
-import net.minecraft.block.Block;
 import net.minecraft.util.ResourceLocation;
-
-import net.minecraftforge.oredict.OreIngredient;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreIngredient;
 import net.minecraftforge.registries.IForgeRegistryModifiable;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.config.ConfigValue;
+import suike.suikecherry.item.ItemBase;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CraftRecipe {
     public static void register() {

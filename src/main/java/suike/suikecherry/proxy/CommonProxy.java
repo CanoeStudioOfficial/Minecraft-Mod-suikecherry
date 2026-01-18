@@ -1,16 +1,14 @@
 package suike.suikecherry.proxy;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.packet.PacketHandler;
-import suike.suikecherry.client.gui.GuiHandler;
-import suike.suikecherry.tileentity.*;
-
 import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.tileentity.TileEntity;
-
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.client.gui.GuiHandler;
+import suike.suikecherry.packet.PacketHandler;
+import suike.suikecherry.tileentity.*;
 
 public class CommonProxy {
     public void registerItemRenderer(Item item) {}

@@ -1,25 +1,19 @@
 package suike.suikecherry.event;
 
-import suike.suikecherry.SuiKe;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.inventory.GuiInventory;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraftforge.client.event.GuiOpenEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import org.lwjgl.input.Keyboard;
 import suike.suikecherry.client.gui.GuiChestBoat;
 import suike.suikecherry.entity.boat.ModEntityChestBoat;
 import suike.suikecherry.packet.PacketHandler;
 import suike.suikecherry.packet.packets.OpenChestBoatPacket;
-
-import net.minecraft.client.Minecraft;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.client.gui.inventory.GuiInventory;
-import net.minecraft.inventory.IInventory;
-
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.FMLCommonHandler;
-import net.minecraftforge.fml.common.eventhandler.EventPriority;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.client.event.GuiOpenEvent;
-
-import org.lwjgl.input.Keyboard;
 
 @Mod.EventBusSubscriber(Side.CLIENT)
 public class OpenGuiEvent {

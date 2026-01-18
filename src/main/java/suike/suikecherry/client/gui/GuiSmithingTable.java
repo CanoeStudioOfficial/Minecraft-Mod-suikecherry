@@ -1,15 +1,13 @@
 package suike.suikecherry.client.gui;
 
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.ResourceLocation;
 import suike.suikecherry.SuiKe;
-import suike.suikecherry.block.ModBlockSmithingTable;
 import suike.suikecherry.block.ModBlockSmithingTable.SmithingTableContainer;
 import suike.suikecherry.client.render.entity.RenderPlayerModel;
-
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.gui.inventory.GuiContainer;
 
 public class GuiSmithingTable extends GuiContainer {
     private static final ResourceLocation SMITHING_GUI = new ResourceLocation(SuiKe.MODID, "textures/gui/container/smithing.png");

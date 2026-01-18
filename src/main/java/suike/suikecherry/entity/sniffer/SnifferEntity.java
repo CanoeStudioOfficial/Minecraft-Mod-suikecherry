@@ -1,34 +1,26 @@
 package suike.suikecherry.entity.sniffer;
 
-import java.util.Random;
-
-import suike.suikecherry.item.ItemBase;
-import suike.suikecherry.block.BlockBase;
-import suike.suikecherry.sound.Sound;
-import suike.suikecherry.packet.PacketHandler;
-
+import net.minecraft.block.Block;
+import net.minecraft.entity.EntityAgeable;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.*;
+import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.block.Block;
-import net.minecraft.init.SoundEvents;
-import net.minecraft.world.World;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.DamageSource;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.entity.ai.*;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityAgeable;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.passive.EntityAnimal;
-import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.item.EntityItem;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
+import net.minecraft.util.DamageSource;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.world.World;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.item.ItemBase;
+import suike.suikecherry.sound.Sound;
 
-import net.minecraftforge.fml.common.network.NetworkRegistry;
+import java.util.Random;
 
 public class SnifferEntity extends EntityAnimal {
 

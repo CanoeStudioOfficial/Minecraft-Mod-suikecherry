@@ -1,12 +1,9 @@
 package suike.suikecherry.block;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.item.ItemBase;
-
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemBlock;
+import suike.suikecherry.SuiKe;
 
 // 楼梯类
 public class ModBlockStairs extends BlockStairs {

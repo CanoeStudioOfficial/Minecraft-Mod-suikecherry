@@ -1,8 +1,7 @@
 package suike.suikecherry.data;
 
-import suike.suikecherry.SuiKe;
-
 import net.minecraft.util.ResourceLocation;
+import suike.suikecherry.SuiKe;
 
 public class TreasureRoomData {
     private final int x, z;

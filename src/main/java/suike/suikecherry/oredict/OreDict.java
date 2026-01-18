@@ -1,15 +1,12 @@
 package suike.suikecherry.oredict;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.item.ItemBase;
-import suike.suikecherry.block.BlockBase;
-
+import net.minecraft.block.Block;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.block.Block;
-
 import net.minecraftforge.oredict.OreDictionary;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.item.ItemBase;
 
 //添加块矿词
 public class OreDict {

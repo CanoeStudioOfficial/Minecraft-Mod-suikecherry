@@ -1,16 +1,16 @@
 package suike.suikecherry.world.gen.structure;
 
-import java.util.Set;
-
-import suike.suikecherry.config.ConfigValue;
-import suike.suikecherry.world.gen.structure.oceanruins.*;
-import suike.suikecherry.world.gen.structure.trailruins.*;
-import suike.suikecherry.world.gen.structure.desertwell.*;
-import suike.suikecherry.world.gen.structure.desertpyramid.*;
-
 import net.minecraft.world.gen.structure.MapGenStructureIO;
-
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import suike.suikecherry.config.ConfigValue;
+import suike.suikecherry.world.gen.structure.desertpyramid.DesertPyramidTreasureRoom;
+import suike.suikecherry.world.gen.structure.desertpyramid.DesertPyramidTreasureRoomGen;
+import suike.suikecherry.world.gen.structure.desertwell.DesertWell;
+import suike.suikecherry.world.gen.structure.desertwell.DesertWellGen;
+import suike.suikecherry.world.gen.structure.oceanruins.OceanRuins;
+import suike.suikecherry.world.gen.structure.oceanruins.OceanRuinsGen;
+import suike.suikecherry.world.gen.structure.trailruins.TrailRuins;
+import suike.suikecherry.world.gen.structure.trailruins.TrailRuinsGen;
 
 public class ModStructure {
     public static void registerStructure() {

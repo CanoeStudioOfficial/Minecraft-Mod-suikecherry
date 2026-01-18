@@ -1,15 +1,12 @@
 package suike.suikecherry.expand.oe;
 
-import java.util.Random;
-
-import suike.suikecherry.expand.Examine;
-
 import com.sirsquidly.oe.entity.EntityDrowned;
-
-import net.minecraft.world.World;
+import net.minecraft.block.material.Material;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
+
+import java.util.Random;
 
 public class SpawnDrowned {
     // 在周围生成溺尸

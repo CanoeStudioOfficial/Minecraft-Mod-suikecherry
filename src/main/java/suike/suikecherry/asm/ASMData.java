@@ -1,14 +1,13 @@
 package suike.suikecherry.asm;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.util.function.*;
-
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
 import suike.suikecherry.asm.advice.*;
 import suike.suikecherry.inter.IMethod;
-import suike.suikecherry.expand.Examine;
 
-import org.objectweb.asm.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Function;
 
 public class ASMData {
 

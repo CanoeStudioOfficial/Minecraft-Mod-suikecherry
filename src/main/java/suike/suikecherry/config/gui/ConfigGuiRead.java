@@ -1,14 +1,11 @@
 package suike.suikecherry.config.gui;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.function.Consumer;
-
+import net.minecraftforge.fml.client.config.IConfigElement;
 import suike.suikecherry.config.ConfigValue;
 import suike.suikecherry.config.gui.SimpleConfigElement.RequiresConfigElement;
 
-import net.minecraftforge.fml.client.config.IConfigElement;
-import net.minecraftforge.fml.client.config.GuiConfigEntries.IConfigEntry;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ConfigGuiRead {
     public static List<IConfigElement> getConfigElements() {

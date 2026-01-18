@@ -1,17 +1,14 @@
 package suike.suikecherry.world.gen.cherry;
 
-import java.util.Random;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.block.*;
-import suike.suikecherry.config.ConfigValue;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.block.ModBlockPetals;
 import suike.suikecherry.world.biome.CherryBiome;
 
-import net.minecraft.init.Blocks;
-import net.minecraft.block.Block;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
+import java.util.Random;
 
 public class PetalsGen {
     public static final IBlockState grassState = Blocks.TALLGRASS.getStateFromMeta(1);

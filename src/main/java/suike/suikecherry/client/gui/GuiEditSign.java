@@ -1,30 +1,27 @@
 package suike.suikecherry.client.gui;
 
-import java.util.Map;
-import java.util.Deque;
-import java.util.Arrays;
-import java.util.ArrayDeque;
-import java.io.IOException;
-import java.awt.Toolkit;
-import java.awt.datatransfer.DataFlavor;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.packet.PacketHandler;
-import suike.suikecherry.packet.packets.SignTextUpdatePacket;
-import suike.suikecherry.tileentity.HasBackSideSignTileEntity;
-import suike.suikecherry.data.SignGuiTexturesData;
-
-import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiTextField;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
-import net.minecraft.entity.player.EntityPlayer;
-
 import org.lwjgl.input.Keyboard;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.data.SignGuiTexturesData;
+import suike.suikecherry.packet.PacketHandler;
+import suike.suikecherry.packet.packets.SignTextUpdatePacket;
+import suike.suikecherry.tileentity.HasBackSideSignTileEntity;
+
+import java.awt.*;
+import java.awt.datatransfer.DataFlavor;
+import java.io.IOException;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
 
 public class GuiEditSign extends GuiScreen {
     private final int editingSlot;

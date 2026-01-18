@@ -1,20 +1,18 @@
 package suike.suikecherry.recipe;
 
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.expand.Examine;
-import suike.suikecherry.config.ConfigValue;
-import suike.suikecherry.item.ItemBase;
-import suike.suikecherry.block.BlockBase;
-
-import net.minecraft.init.Items;
+import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.block.Block;
 import net.minecraft.util.ResourceLocation;
-
-import net.minecraftforge.oredict.OreIngredient;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreIngredient;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.block.BlockBase;
+import suike.suikecherry.config.ConfigValue;
+import suike.suikecherry.expand.Examine;
+import suike.suikecherry.item.ItemBase;
 
 public class SignRecipe {
     public static void register() {

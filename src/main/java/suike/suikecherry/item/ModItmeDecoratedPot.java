@@ -1,11 +1,10 @@
 package suike.suikecherry.item;
 
-import suike.suikecherry.block.ModBlockDecoratedPot;
-
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
-import net.minecraft.creativetab.CreativeTabs;
+import suike.suikecherry.block.ModBlockDecoratedPot;
 
 // 陶罐物品类
 public class ModItmeDecoratedPot extends ItemBlock {

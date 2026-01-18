@@ -1,7 +1,5 @@
 package suike.suikecherry.expand;
 
-import suike.suikecherry.SuiKe;
-
 import net.minecraftforge.fml.common.Loader;
 
 //检查是否拥有联动模组模组

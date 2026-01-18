@@ -1,9 +1,7 @@
 package suike.suikecherry.sound;
 
-import suike.suikecherry.sound.soundtype.*;
-
 import net.minecraft.block.SoundType;
-import net.minecraft.util.ResourceLocation;
+import suike.suikecherry.sound.soundtype.*;
 
 public class ModSoundType {
     public static final SoundType none = new SoundTypeNone();

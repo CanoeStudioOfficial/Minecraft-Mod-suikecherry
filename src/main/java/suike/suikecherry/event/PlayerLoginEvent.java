@@ -1,18 +1,16 @@
 package suike.suikecherry.event;
 
-import java.util.*;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.data.TreasureData;
-
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 import net.minecraftforge.fml.relauncher.Side;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.data.TreasureData;
+
+import java.util.Set;
 
 // 玩家登录事件
 @Mod.EventBusSubscriber(Side.CLIENT)

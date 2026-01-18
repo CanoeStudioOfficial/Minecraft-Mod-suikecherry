@@ -1,25 +1,28 @@
 package suike.suikecherry.expand.jei;
 
-import java.util.*;
-import java.util.stream.Collectors;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.item.ItemBase;
-import suike.suikecherry.data.TreasureData;
-
-import mezz.jei.api.*;
-import mezz.jei.api.gui.*;
-import mezz.jei.api.recipe.IFocus;
-import mezz.jei.api.recipe.IRecipeWrapper;
+import mezz.jei.api.IGuiHelper;
+import mezz.jei.api.IModPlugin;
+import mezz.jei.api.IModRegistry;
+import mezz.jei.api.JEIPlugin;
+import mezz.jei.api.gui.IDrawable;
+import mezz.jei.api.gui.IGuiItemStackGroup;
+import mezz.jei.api.gui.IRecipeLayout;
+import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.recipe.IRecipeCategory;
 import mezz.jei.api.recipe.IRecipeCategoryRegistration;
-import mezz.jei.api.ingredients.IIngredients;
-
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+import mezz.jei.api.recipe.IRecipeWrapper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.I18n;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.data.TreasureData;
+import suike.suikecherry.item.ItemBase;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @JEIPlugin
 public class TreasureDataJEIPlugin implements IModPlugin {

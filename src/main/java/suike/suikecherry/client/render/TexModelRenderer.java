@@ -1,10 +1,9 @@
 package suike.suikecherry.client.render;
 
-import java.util.function.Supplier;
-
-import net.minecraft.util.EnumFacing;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
+
+import java.util.function.Supplier;
 
 public class TexModelRenderer extends ModelRenderer {
     private final Runnable beforeRend;

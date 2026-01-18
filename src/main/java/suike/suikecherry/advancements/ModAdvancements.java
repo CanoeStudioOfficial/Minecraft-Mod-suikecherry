@@ -1,32 +1,27 @@
 package suike.suikecherry.achievement;
 
-import java.util.Set;
-import java.util.Map;
-import java.util.List;
-import java.util.HashMap;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-
+import com.google.common.collect.ImmutableMap;
+import net.minecraft.advancements.*;
+import net.minecraft.advancements.critereon.ImpossibleTrigger;
+import net.minecraft.block.Block;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.text.TextComponentTranslation;
 import suike.suikecherry.SuiKe;
+import suike.suikecherry.block.BlockBase;
 import suike.suikecherry.data.TrimData;
 import suike.suikecherry.item.ItemBase;
 import suike.suikecherry.item.ModItemSmithingTemplate;
-import suike.suikecherry.block.BlockBase;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.block.Block;
-import net.minecraft.advancements.*;
-import net.minecraft.advancements.critereon.*;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.TextComponentTranslation;
-import net.minecraft.nbt.NBTTagCompound;
-
-import net.minecraftforge.fml.common.FMLCommonHandler;
-
-import com.google.common.collect.ImmutableMap;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public enum ModAdvancements {
     SALVAGE_SHERD("salvage_sherd", ItemBase.BRUSH, "adventure/root", "adventure.salvage_sherd", FrameType.TASK),

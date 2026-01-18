@@ -1,14 +1,10 @@
 package suike.suikecherry.client.gui;
 
-import suike.suikecherry.entity.boat.ModEntityChestBoat;
-import suike.suikecherry.entity.boat.ModEntityChestBoat.ChestInventory;
-import suike.suikecherry.entity.boat.ModEntityChestBoat.ContainerChestBoat;
-
-import net.minecraft.inventory.IInventory;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.ResourceLocation;
+import suike.suikecherry.entity.boat.ModEntityChestBoat;
 
 public class GuiChestBoat extends GuiContainer {
     private static final ResourceLocation CHEST_GUI_TEXTURE = new ResourceLocation("textures/gui/container/generic_54.png");

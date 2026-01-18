@@ -1,19 +1,14 @@
 package suike.suikecherry.client.render.item;
 
-import java.util.List;
-import java.util.Random;
-
-import suike.suikecherry.SuiKe;
-import suike.suikecherry.data.TrimData;
-
-import net.minecraft.item.ItemArmor;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.block.model.IBakedModel;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+import suike.suikecherry.SuiKe;
+import suike.suikecherry.data.TrimData;
 
 public class ArmorTrimItemRender {
 

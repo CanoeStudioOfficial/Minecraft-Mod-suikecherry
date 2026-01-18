@@ -1,11 +1,10 @@
 package suike.suikecherry.client.render.entity.boat;
 
-import suike.suikecherry.entity.boat.ModEntityBoat;
-
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.entity.Entity;
+import net.minecraft.util.math.MathHelper;
+import suike.suikecherry.entity.boat.ModEntityBoat;
 
 public class RaftModel extends ModelBase {
     private final ModelRenderer root;

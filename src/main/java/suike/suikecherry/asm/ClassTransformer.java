@@ -1,14 +1,11 @@
 package suike.suikecherry.asm;
 
-import java.util.Map;
-import java.nio.file.*;
-
-import suike.suikecherry.inter.IMethod;
-import suike.suikecherry.asm.advice.AdviceAdapterData;
-
 import net.minecraft.launchwrapper.IClassTransformer;
-
 import org.objectweb.asm.*;
+import suike.suikecherry.asm.advice.AdviceAdapterData;
+import suike.suikecherry.inter.IMethod;
+
+import java.util.Map;
 
 public class ClassTransformer implements IClassTransformer {
 
