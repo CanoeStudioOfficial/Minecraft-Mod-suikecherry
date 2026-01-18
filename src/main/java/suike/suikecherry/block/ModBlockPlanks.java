@@ -23,7 +23,7 @@ public class ModBlockPlanks extends Block {
     public ModBlockPlanks(String name) {
         super(Material.WOOD);
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
         /*设置硬度*/this.setHardness(2.0F);
         /*设置抗爆性*/this.setResistance(5.0F);

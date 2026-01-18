@@ -47,7 +47,7 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 public class ModBlockPetals extends BlockBush implements IGrowable {
     public ModBlockPetals(String name, EnumDyeColor color) {
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置硬度*/this.setHardness(0.0F);
         /*设置抗爆性*/this.setResistance(0.0F);
         /*设置不透明度*/this.setLightOpacity(0);

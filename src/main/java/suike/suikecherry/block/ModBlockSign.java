@@ -34,7 +34,7 @@ public class ModBlockSign extends Block implements IBlockSign, IAxis {
     public ModBlockSign(String name) {
         super(Material.WOOD);
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置硬度*/this.setHardness(1.0F);
         /*设置抗爆性*/this.setResistance(1.0F);
         /*设置挖掘等级*/this.setHarvestLevel("axe", 0);
@@ -116,7 +116,7 @@ public class ModBlockSign extends Block implements IBlockSign, IAxis {
 
 // 模型透明
     @Override
-    public BlockRenderLayer getBlockLayer() {
+    public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT_MIPPED;
     }
     @Override

@@ -36,7 +36,7 @@ public class ModBlockSignWall extends Block implements IBlockSign, ICardinal {
     public ModBlockSignWall(String name) {
         super(Material.WOOD);
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置硬度*/this.setHardness(1.0F);
         /*设置抗爆性*/this.setResistance(1.0F);
         /*设置挖掘等级*/this.setHarvestLevel("axe", 0);
@@ -84,7 +84,7 @@ public class ModBlockSignWall extends Block implements IBlockSign, ICardinal {
     }
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        return this.getDefaultState().withProperty(FACING, EnumFacing.getFront(meta & 7));
+        return this.getDefaultState().withProperty(FACING, EnumFacing.byIndex(meta & 7));
     }
     @Override
     public int getMetaFromState(IBlockState state) {

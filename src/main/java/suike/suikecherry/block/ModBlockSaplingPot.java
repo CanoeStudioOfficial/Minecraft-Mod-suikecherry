@@ -30,7 +30,7 @@ public class ModBlockSaplingPot extends Block {
     public ModBlockSaplingPot(String name) {
         super(Material.CIRCUITS);
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置不透明度*/this.setLightOpacity(0);
 
         /*添加到BLOCKS列表*/BlockBase.BLOCKS.add(this);
@@ -89,7 +89,7 @@ public class ModBlockSaplingPot extends Block {
 
 // 状态覆盖
     @Override
-    public BlockRenderLayer getBlockLayer() {
+    public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT_MIPPED;
     }
     @Override
