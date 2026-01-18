@@ -13,7 +13,7 @@ public class ModItemRecord extends ItemRecord {
     public ModItemRecord(String name, String soundName) {
         super(name, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(SuiKe.MODID, soundName)));
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         this.soundName = soundName;
 
         /*添加到ITEMS列表*/ItemBase.ITEMS.add(this);

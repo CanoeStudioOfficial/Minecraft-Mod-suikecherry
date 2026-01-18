@@ -21,7 +21,7 @@ public class Config {
         if (SuiKe.isServer) {
             config = FMLCommonHandler.instance().getMinecraftServerInstance().getDataDirectory();
         } else {
-            config = Minecraft.getMinecraft().mcDataDir;
+            config = Minecraft.getMinecraft().gameDir;
         }
 
         configFile = new File(config, "config/sui_ke/cherry/Cherry.cfg");

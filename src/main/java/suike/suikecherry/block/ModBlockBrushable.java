@@ -45,7 +45,7 @@ public class ModBlockBrushable extends BlockFalling {
     public ModBlockBrushable(String name, Block defaultBlock, String brushingSound, SoundType soundType) {
         super(Material.SAND);
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         //*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.DECORATIONS);
         /*设置硬度*/this.setHardness(0.25F);
         /*设置抗爆性*/this.setResistance(0.25F);

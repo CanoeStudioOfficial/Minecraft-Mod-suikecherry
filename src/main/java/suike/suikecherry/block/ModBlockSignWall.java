@@ -139,7 +139,7 @@ public class ModBlockSignWall extends Block implements IBlockSign, ICardinal {
 
 // 模型透明
     @Override
-    public BlockRenderLayer getBlockLayer() {
+    public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT_MIPPED;
     }
     @Override

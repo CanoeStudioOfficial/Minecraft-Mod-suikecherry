@@ -32,7 +32,7 @@ import com.google.common.collect.Lists;
 public class ModItemHangingSign extends Item {
     public ModItemHangingSign(String name, ModBlockHangingSign block, ModBlockHangingSign blockInWall, ModBlockHangingSignAttached blockAttached) {
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置堆叠数量*/this.setMaxStackSize(16);
         //*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.DECORATIONS);
         block.setItem(this);

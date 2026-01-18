@@ -27,7 +27,7 @@ public class ModItemSlab extends ItemSlab {
     public ModItemSlab(String name, ModBlockSlab block, ModBlockSlab blockDouble) {
         super(block, block, blockDouble);
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
         block.setItem(this);
         blockDouble.setItem(this);

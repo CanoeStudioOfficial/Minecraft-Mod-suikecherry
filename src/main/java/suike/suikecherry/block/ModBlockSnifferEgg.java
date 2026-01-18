@@ -42,7 +42,7 @@ public class ModBlockSnifferEgg extends Block {
     public ModBlockSnifferEgg(String name) {
         super(Material.DRAGON_EGG);
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.MATERIALS);
         /*设置硬度*/this.setHardness(0.5F);
         /*设置抗爆性*/this.setResistance(0.5F);
@@ -191,7 +191,7 @@ public class ModBlockSnifferEgg extends Block {
 
 // 模型透明
     @Override
-    public BlockRenderLayer getBlockLayer() {
+    public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT_MIPPED;
     }
     @Override

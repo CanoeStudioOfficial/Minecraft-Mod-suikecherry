@@ -28,7 +28,7 @@ import net.minecraft.entity.player.EntityPlayer;
 public class ModItemSapling extends Item {
     public ModItemSapling(String name, ModBlockSapling sapling) {
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.DECORATIONS);
         this.setBlock(sapling);
 

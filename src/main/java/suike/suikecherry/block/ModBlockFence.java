@@ -15,7 +15,7 @@ public class ModBlockFence extends BlockFence {
     public ModBlockFence(String name) {
         super(Material.WOOD, MapColor.WOOD);
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.DECORATIONS);
         /*设置硬度*/this.setHardness(2.0F);
         /*设置抗爆性*/this.setResistance(3.0F);

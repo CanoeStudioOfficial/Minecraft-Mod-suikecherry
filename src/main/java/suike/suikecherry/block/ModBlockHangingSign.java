@@ -42,7 +42,7 @@ public class ModBlockHangingSign extends Block implements IBlockHangingSign, ICa
     public ModBlockHangingSign(String name) {
         super(Material.WOOD);
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置硬度*/this.setHardness(1.0F);
         /*设置抗爆性*/this.setResistance(1.0F);
         /*设置挖掘等级*/this.setHarvestLevel("axe", 0);
@@ -136,7 +136,7 @@ public class ModBlockHangingSign extends Block implements IBlockHangingSign, ICa
     @Override
     public IBlockState getStateFromMeta(int meta) {
         return this.getDefaultState()
-            .withProperty(FACING, EnumFacing.getFront(meta & 7));
+            .withProperty(FACING, EnumFacing.byIndex(meta & 7));
     }
     @Override
     public int getMetaFromState(IBlockState state) {
@@ -277,7 +277,7 @@ public class ModBlockHangingSign extends Block implements IBlockHangingSign, ICa
 
 // 模型透明
     @Override
-    public BlockRenderLayer getBlockLayer() {
+    public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT_MIPPED; // 设置为透明层
     }
     @Override

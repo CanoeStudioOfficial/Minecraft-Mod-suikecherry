@@ -23,7 +23,7 @@ import net.minecraft.entity.passive.EntityAnimal;
 public class ModItemEntityEgg extends Item {
     public ModItemEntityEgg(String name, Class<? extends EntityLiving> entityClass) {
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.MISC);
         this.setEntityClass(entityClass);
 

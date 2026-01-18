@@ -19,7 +19,7 @@ public class ModItemSmithingTemplate extends Item {
     }
     public ModItemSmithingTemplate(String name, String lootModID, String targetTable) {
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.MISC);
         this.patternType = name.toString().replace("_armor_trim_smithing_template", "");
         ALL_ITEM.add(this);

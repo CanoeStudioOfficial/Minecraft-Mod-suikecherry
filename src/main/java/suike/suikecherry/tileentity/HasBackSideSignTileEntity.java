@@ -213,7 +213,7 @@ public class HasBackSideSignTileEntity extends TileEntitySign {
 
         this.markDirty();
         WorldServer worldServer = (WorldServer)world;
-        worldServer.getChunkFromBlockCoords(pos).markDirty();
+        worldServer.getChunk(pos).markDirty();
     }
 
 // 存储 & 读取

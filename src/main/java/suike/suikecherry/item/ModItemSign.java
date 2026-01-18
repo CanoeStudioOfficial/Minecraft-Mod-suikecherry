@@ -31,7 +31,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class ModItemSign extends Item {
     public ModItemSign(String name, ModBlockSign block, ModBlockSignWall blockInWall) {
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置堆叠数量*/this.setMaxStackSize(16);
         //*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.DECORATIONS);
         block.setItem(this);
@@ -121,7 +121,7 @@ public class ModItemSign extends Item {
         }
 
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(ItemBase.CHERRY_HANGING_SIGN);
         }
 

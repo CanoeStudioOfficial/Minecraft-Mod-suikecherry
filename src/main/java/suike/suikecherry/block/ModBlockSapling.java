@@ -29,7 +29,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 public class ModBlockSapling extends BlockBush implements IGrowable {
     public ModBlockSapling(String name) {
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置不透明度*/this.setLightOpacity(0);
         /*设置声音*/this.setSoundType(ModBlockPlanks.EnumType.getEnumType(name).getLeavesSound());
 

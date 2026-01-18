@@ -18,7 +18,7 @@ public class ModBlockButton extends BlockButton {
     public ModBlockButton(String name) {
         super(false);
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.REDSTONE);
         /*设置硬度*/this.setHardness(0.5F);
         /*设置抗爆性*/this.setResistance(0.5F);

@@ -45,7 +45,7 @@ public class ModBlockChiseledBookShelf extends Block implements ICardinal {
     public ModBlockChiseledBookShelf(String name) {
         super(Material.WOOD);
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.REDSTONE);
         /*设置硬度*/this.setHardness(1.5F);
         /*设置抗爆性*/this.setResistance(1.5F);
@@ -88,7 +88,7 @@ public class ModBlockChiseledBookShelf extends Block implements ICardinal {
     @Override
     public IBlockState getStateFromMeta(int meta) {
         return this.getDefaultState()
-            .withProperty(FACING, EnumFacing.getHorizontal(meta & 3));
+            .withProperty(FACING, EnumFacing.byHorizontalIndex(meta & 3));
     }
     @Override
     public int getMetaFromState(IBlockState state) {

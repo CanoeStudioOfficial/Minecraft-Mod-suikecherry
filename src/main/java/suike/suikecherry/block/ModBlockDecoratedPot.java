@@ -63,7 +63,7 @@ public class ModBlockDecoratedPot extends Block {
     public ModBlockDecoratedPot(String name) {
         super(Material.CLAY);
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置不透明度*/this.setLightOpacity(0);
         /*设置声音*/this.setSoundType(ModSoundType.decoratedPot);
 
@@ -103,7 +103,7 @@ public class ModBlockDecoratedPot extends Block {
     @Override
     public IBlockState getStateFromMeta(int meta) {
         return this.getDefaultState()
-            .withProperty(FACING, EnumFacing.getHorizontal(meta & 3));
+            .withProperty(FACING, EnumFacing.byHorizontalIndex(meta & 3));
     }
     @Override
     public int getMetaFromState(IBlockState state) {
@@ -112,7 +112,7 @@ public class ModBlockDecoratedPot extends Block {
 
 // 模型透明
     @Override
-    public BlockRenderLayer getBlockLayer() {
+    public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT_MIPPED;
     }
     @Override
@@ -208,7 +208,7 @@ public class ModBlockDecoratedPot extends Block {
 
 // 弹射物破坏
     @Override
-    public void onEntityCollidedWithBlock(World world, BlockPos pos, IBlockState state, Entity entity) {
+    public void onEntityCollision(World world, BlockPos pos, IBlockState state, Entity entity) {
         if (world.isRemote) return;
         // 确保是弹射物
         if (this.isProjectile(entity)) {
@@ -249,7 +249,7 @@ public class ModBlockDecoratedPot extends Block {
             Block block = blockState.getBlock();
 
             if (block instanceof ModBlockDecoratedPot) {
-                block.onEntityCollidedWithBlock(entity.world, blockPos, blockState, entity);
+                block.onEntityCollision(entity.world, blockPos, blockState, entity);
             }
         }
     }
@@ -328,7 +328,7 @@ public class ModBlockDecoratedPot extends Block {
 
 // 活塞推动
     @Override
-    public EnumPushReaction getMobilityFlag(IBlockState state) {
+    public EnumPushReaction getPushReaction(IBlockState state) {
         return EnumPushReaction.DESTROY; // 推动时破坏
     }
 

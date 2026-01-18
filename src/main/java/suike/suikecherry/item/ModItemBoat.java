@@ -28,7 +28,7 @@ import net.minecraft.stats.StatList;
 public class ModItemBoat extends Item {
     public ModItemBoat(String name, Class<? extends ModEntityBoat> entityBoat) {
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置堆叠数量*/this.setMaxStackSize(1);
         /*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.TRANSPORTATION);
         this.setBoat(entityBoat);

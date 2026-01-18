@@ -13,7 +13,7 @@ import net.minecraft.creativetab.CreativeTabs;
 public class ModItemPotterySherd extends Item {
     public ModItemPotterySherd(String name) {
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         this.potteryType = name.replace("sherd", "pattern");
         ALL_ITEM.add(this);
         ALL_POTTERY_TYPE.add(this.potteryType);

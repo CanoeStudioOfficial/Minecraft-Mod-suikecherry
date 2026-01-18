@@ -24,7 +24,7 @@ public class ModItemDoor extends ItemDoor {
     public ModItemDoor(String name, ModBlockDoor block) {
         super(block);
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         block.setItem(this);
 
         /*添加到ITEMS列表*/ItemBase.ITEMS.add(this);

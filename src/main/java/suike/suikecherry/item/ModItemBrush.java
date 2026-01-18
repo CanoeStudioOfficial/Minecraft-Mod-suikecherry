@@ -38,7 +38,7 @@ public class ModItemBrush extends Item {
 
     public ModItemBrush(String name) {
         /*设置物品名*/this.setRegistryName(name);
-        /*设置物品名key*/this.setUnlocalizedName(SuiKe.MODID + "." + name);
+        /*设置物品名key*/this.setTranslationKey(SuiKe.MODID + "." + name);
         /*设置堆叠数量*/this.setMaxStackSize(1);
         /*设置最大耐久值*/this.setMaxDamage(250);
         /*设置创造模式物品栏*/this.setCreativeTab(CreativeTabs.TOOLS);
@@ -119,16 +119,16 @@ public class ModItemBrush extends Item {
 // 验证玩家与方块的交互距离
     private boolean canReachBlock(EntityPlayer player, BlockPos pos) {
         Vec3d eyesPos = new Vec3d(player.posX, player.posY + player.getEyeHeight(), player.posZ);
-        Vec3d blockCenter = new Vec3d(pos).addVector(0.5, 0.5, 0.5);
+        Vec3d blockCenter = new Vec3d(pos).add(0.5, 0.5, 0.5);
         double distance = eyesPos.distanceTo(blockCenter);
         return distance <= MAX_DISTANCE;
     }
 
 // 生成粒子效果
     private void spawnDustParticles(World world, BlockPos pos, EnumFacing facing) {
-        double baseX = pos.getX() + 0.5 + facing.getFrontOffsetX() * 0.51;
-        double baseY = pos.getY() + 0.5 + facing.getFrontOffsetY() * 0.51;
-        double baseZ = pos.getZ() + 0.5 + facing.getFrontOffsetZ() * 0.51;
+        double baseX = pos.getX() + 0.5 + facing.getXOffset() * 0.51;
+        double baseY = pos.getY() + 0.5 + facing.getYOffset() * 0.51;
+        double baseZ = pos.getZ() + 0.5 + facing.getZOffset() * 0.51;
 
         for (int i = 0; i < 8; ++i) {
             double offsetX = (facing.getAxis() != EnumFacing.Axis.X) ? world.rand.nextDouble() - 0.5 : 0;
@@ -136,9 +136,9 @@ public class ModItemBrush extends Item {
             double offsetZ = (facing.getAxis() != EnumFacing.Axis.Z) ? world.rand.nextDouble() - 0.5 : 0;
 
             // 应用面方向偏移
-            offsetX *= 0.7 * Math.abs(facing.getFrontOffsetX() + 1);
-            offsetY *= 0.7 * Math.abs(facing.getFrontOffsetY() + 1);
-            offsetZ *= 0.7 * Math.abs(facing.getFrontOffsetZ() + 1);
+            offsetX *= 0.7 * Math.abs(facing.getXOffset() + 1);
+            offsetY *= 0.7 * Math.abs(facing.getYOffset() + 1);
+            offsetZ *= 0.7 * Math.abs(facing.getZOffset() + 1);
 
             world.spawnParticle(EnumParticleTypes.BLOCK_CRACK, 
                 baseX + offsetX,
@@ -165,7 +165,7 @@ public class ModItemBrush extends Item {
         }
 
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             //设置分类窗口的图标
             return new ItemStack(ItemBase.BRUSH);
         }
@@ -174,7 +174,7 @@ public class ModItemBrush extends Item {
         public void displayAllRelevantItems(NonNullList<ItemStack> items) {
             super.displayAllRelevantItems(items);
 
-            items.add(getTabIconItem());
+            items.add(createIcon());
             for (Item item : ARCHAEOLOGY_ITEMS) {
                 items.add(new ItemStack(item));
             }
